@@ -1,0 +1,66 @@
+<<<<<<< HEAD
+<% include ../partials/header %>
+    <br>
+    <div class="container opp-form">
+        <h1 class="text-center">Edit <%= opportunity.name %></h1>
+        <br>
+        <div class="cg-form">
+            <form action="?_method=PUT" method="post">
+                <div class="form-group">
+                        <input type="text" required class="form-control" name="opportunity[title]" value="<%= opportunity.title %>">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" name="opportunity[description]" required><%= opportunity.description %></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" required name="opportunity[city]" value="<%= opportunity.city %>">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" required name="opportunity[address]" value="<%= opportunity.address %>">
+                    </div>
+                    <div class="form-group">
+                            <input type="text" class="form-control" required name="opportunity[duration]" value="<%= opportunity.duration %>">
+                    </div>
+                    <div class="form-group">
+                            <input type="date" class="form-control" required name="opportunity[date]" value="<%= opportunity.date %>">
+                    </div>
+                <div class="form-group">
+                    <button class="btn btn-primary btn-lg btn-block" type="submit">Update!</button>
+                </div>
+            </form>
+        </div>
+    </div>
+=======
+<% include ../partials/header %>
+    <br>
+    <div class="container opp-form">
+        <h1 class="text-center">Edit <%= opportunity.name %></h1>
+        <br>
+        <div class="cg-form">
+            <form action="?_method=PUT" method="post">
+                <div class="form-group">
+                        <input type="text" required class="form-control" name="opportunity[title]" value="<%= opportunity.title %>">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="opportunity[description]" required rows="7" cols="60"><%= opportunity.description %></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" required name="opportunity[city]" value="<%= opportunity.city %>">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" required name="opportunity[address]" value="<%= opportunity.address %>">
+                    </div>
+                    <div class="form-group">
+                            <input type="text" class="form-control" required name="opportunity[duration]" value="<%= opportunity.duration %>">
+                    </div>
+                    <div class="form-group">
+                            <input type="date" class="form-control" required name="opportunity[date]" value="<%= opportunity.date %>">
+                    </div>
+                <div class="form-group">
+                    <button class="btn btn-primary btn-lg btn-block" type="submit">Update!</button>
+                </div>
+            </form>
+        </div>
+    </div>
+>>>>>>> 155441e18bdbfcc2fd483b73e65bbfda087dc39d
+<% include ../partials/footer %>

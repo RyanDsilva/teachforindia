@@ -1,0 +1,79 @@
+<<<<<<< HEAD
+<% include ../partials/header %>
+
+    <div class="container text-center">
+        <header class="jumbotron">
+            <h1>Find Opportunites</h1>
+            <div class="container">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ea nam sit! Natus ea excepturi ratione
+                    assumenda. Fugit, nulla commodi sunt nisi, quo incidunt tenetur explicabo nemo distinctio sint numquam?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias ratione eum in animi? Nisi placeat
+                    exercitationem dolorum aliquam porro! Quos suscipit placeat sapiente asperiores quibusdam vel natus atque
+                    nesciunt ratione.</p>
+                <% if (currentUser && currentUser.userType==='Staff'){ %>
+                    <a href="/opportunity/new" class="btn btn-lg btn-primary">Add New Volunteering<br>Opportunity</a>
+                <% } %>
+            </div>
+        </header>
+        <div class="row cg-content">
+            <% opportunities.forEach(function (opportunity){ %>
+                <div class="col-md-4 col-sm-6 opp-card">
+                    <div class="img-thumbnail">
+                        <h4>
+                            <%= opportunity.title %>
+                        </h4>
+                        <div class="caption">
+                            <p>
+                                <%- opportunity.description.substring(0,150) %> ....
+                            </p>
+                        </div>
+                        <p>
+                            <a href="/opportunity/<%= opportunity._id %>" class="btn btn-primary">More Info</a>
+                        </p>
+                    </div>
+                </div>
+                <br>
+                <% }); %>
+        </div>
+    </div>
+
+=======
+<% include ../partials/header %>
+
+    <div class="container text-center">
+        <header class="jumbotron">
+            <h1>Find Opportunites</h1>
+            <div class="container">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ea nam sit! Natus ea excepturi ratione
+                    assumenda. Fugit, nulla commodi sunt nisi, quo incidunt tenetur explicabo nemo distinctio sint numquam?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias ratione eum in animi? Nisi placeat
+                    exercitationem dolorum aliquam porro! Quos suscipit placeat sapiente asperiores quibusdam vel natus atque
+                    nesciunt ratione.</p>
+                <% if (currentUser && currentUser.userType==='Staff'){ %>
+                    <a href="/opportunity/new" class="btn btn-lg btn-primary">Add New Volunteering opportunity</a>
+                <% } %>
+            </div>
+        </header>
+        <div class="row cg-content">
+            <% opportunities.forEach(function (opportunity){ %>
+                <div class="col-md-4 col-sm-6">
+                    <div class="img-thumbnail">
+                        <h4>
+                            <%= opportunity.title %>
+                        </h4>
+                        <div class="caption">
+                            <p>
+                                <%- opportunity.description.substring(0,150) %> ....
+                            </p>
+                        </div>
+                        <p>
+                            <a href="/opportunity/<%= opportunity._id %>" class="btn btn-primary">More Info</a>
+                        </p>
+                    </div>
+                </div>
+                <% }); %>
+        </div>
+    </div>
+
+>>>>>>> 155441e18bdbfcc2fd483b73e65bbfda087dc39d
+    <% include ../partials/footer %>

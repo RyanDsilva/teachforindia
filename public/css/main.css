@@ -1,0 +1,125 @@
+<<<<<<< HEAD
+html,
+body {
+    /*font-family: 'Roboto', sans-serif;*/
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    padding-top: 10px;
+}
+
+/*==============*/
+/*    Login     */
+/*==============*/
+
+.login {
+    width: 40%;
+}
+
+/*==============*/
+/*   Register   */
+/*==============*/
+
+.register {
+    width: 40%;
+}
+
+/*==============*/
+/* Opportunities*/
+/*==============*/
+.opp-card {
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.opp-form {
+    width: 40%;
+}
+
+.show {
+    padding-top: 10px;
+}
+.nav-opts {
+    margin-bottom: 10px;
+}
+#title-nav {
+    color: antiquewhite;
+}
+/*==============*/
+/* MediaQueries */
+/*==============*/
+@media only screen and (max-width: 600px) {
+    .opp-form {
+    width: 90%;
+    }
+    .register {
+        width: 90%;
+    }
+    .login {
+        width: 90%;
+    }
+} 
+
+@media only screen and (min-width: 600px) {
+    .opp-form {
+    width: 70%;
+    }
+    .register {
+        width: 70%;
+    }
+    .login {
+        width: 70%;
+    }
+} 
+
+@media only screen and (min-width: 768px) {
+    .opp-form {
+    width: 40%;
+    }
+    .register {
+        width: 40%;
+    }
+    .login {
+        width: 40%;
+    }
+} 
+=======
+html,
+body {
+    /*font-family: 'Roboto', sans-serif;*/
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    padding-top: 10px;
+}
+
+/*==============*/
+/*    Login     */
+/*==============*/
+
+.login {
+    width: 40%;
+}
+
+/*==============*/
+/*   Register   */
+/*==============*/
+
+.register {
+    width: 40%;
+}
+
+/*==============*/
+/* Opportunities*/
+/*==============*/
+
+.opp-form {
+    width: 40%;
+}
+
+.show {
+    padding-top: 10px;
+}
+>>>>>>> 155441e18bdbfcc2fd483b73e65bbfda087dc39d
