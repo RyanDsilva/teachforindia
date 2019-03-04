@@ -1,16 +1,22 @@
-# teachforindia
-<h1>Teach For India Internship Pre-Work</h1>
-<h3>Application Description</h3>
-<p>
-  Application that allows Fellows and Staff members at Teach For India to create volunteering opportunities that would be available for any potential volunteer to discover and sign up for the same.
-</p>
-<p>
-  <h4>Technology Stack:</h4>
-  <ul>
-    <li>Node JS
-    <li>Express
-    <li>MongoDB
-    <li>PassportJS (for Auth)
-    <li>Bootstrap 4
-  </ul>
-</p>
+# teachforindia :book:
+
+### Teach For India Internship Pre-Work
+
+## Application Description
+
+> Application that allows Fellows and Staff members at Teach For India to create volunteering opportunities that would be available for any potential volunteer to discover and sign up for the same.
+
+## Technology Stack
+- Node.js w/ Express
+- MongoDB
+- Passport.js
+- EJS and Bootstrap 4
+
+## To Run Locally:
+1. Clone the repository.
+2. Execute the following:
+```sh
+npm i
+
+node app.js
+```
